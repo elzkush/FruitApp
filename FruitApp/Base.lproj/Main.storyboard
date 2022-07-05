@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FruitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="723-Ll-cIT">
+                                <rect key="frame" x="39.5" y="315.5" width="335" height="265"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EkX-Xk-OSE">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="130"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8S-d6-nMj">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="130"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="apple"/>
+                                                <connections>
+                                                    <action selector="fruitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7V-Mf-zfG"/>
+                                                    <segue destination="qee-0j-vYa" kind="presentation" modalPresentationStyle="fullScreen" id="1JD-dl-G5B"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-Dh-d7T">
+                                                <rect key="frame" x="170" y="0.0" width="165" height="130"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="banana">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fruitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b7f-wX-8AW"/>
+                                                    <segue destination="qee-0j-vYa" kind="presentation" modalPresentationStyle="fullScreen" id="5an-e5-cb4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ePE-Cj-gIX">
+                                        <rect key="frame" x="0.0" y="135" width="335" height="130"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpJ-u7-BfB">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="130"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="mango"/>
+                                                <connections>
+                                                    <action selector="fruitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fp2-q2-xaE"/>
+                                                    <segue destination="qee-0j-vYa" kind="presentation" modalPresentationStyle="fullScreen" id="JI5-9G-Jvh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HU7-qD-u6T">
+                                                <rect key="frame" x="170" y="0.0" width="165" height="130"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="orange"/>
+                                                <connections>
+                                                    <action selector="fruitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4h-6S-J2W"/>
+                                                    <segue destination="qee-0j-vYa" kind="presentation" modalPresentationStyle="fullScreen" id="sV5-sR-MBf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="4cO-eS-cTf"/>
+                                    <constraint firstAttribute="width" constant="335" id="9hb-Qm-mT1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="723-Ll-cIT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l5d-9v-izx"/>
+                            <constraint firstItem="723-Ll-cIT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="s0R-S7-475"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fruitButtons" destination="HU7-qD-u6T" id="tMr-Mk-g6T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="70"/>
+        </scene>
+        <!--Detailed View Controller-->
+        <scene sceneID="fSh-Re-gZM">
+            <objects>
+                <viewController id="qee-0j-vYa" customClass="DetailedViewController" customModule="FruitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NA2-vL-sci">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nh5-c8-jHg">
+                                <rect key="frame" x="16" y="57" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="OCQ-Xy-jaV"/>
+                                    <constraint firstAttribute="width" constant="24" id="kUC-Tp-XKB"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="backButton:" destination="qee-0j-vYa" eventType="touchUpInside" id="Oyk-V3-I1c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TN2-Jc-04O">
+                                <rect key="frame" x="190" y="59" width="34.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="d5G-oW-q7l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V5L-Gp-pZb">
+                                <rect key="frame" x="37" y="119" width="340" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="KK6-Qj-XES"/>
+                                    <constraint firstAttribute="height" constant="240" id="bSD-Qn-fbB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCT-yr-WZC">
+                                <rect key="frame" x="20" y="379" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uc9-X6-8D6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="225-1B-hhs">
+                                <rect key="frame" x="20" y="425" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gPO-H0-JHD"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="TN2-Jc-04O" firstAttribute="centerX" secondItem="NA2-vL-sci" secondAttribute="centerX" id="ALV-c9-RRN"/>
+                            <constraint firstItem="TN2-Jc-04O" firstAttribute="top" secondItem="gPO-H0-JHD" secondAttribute="top" constant="15" id="J7C-Dn-Gsd"/>
+                            <constraint firstItem="Nh5-c8-jHg" firstAttribute="top" secondItem="gPO-H0-JHD" secondAttribute="top" constant="13" id="UhI-kB-GQI"/>
+                            <constraint firstItem="V5L-Gp-pZb" firstAttribute="top" secondItem="TN2-Jc-04O" secondAttribute="bottom" constant="40" id="XKE-FT-y2Q"/>
+                            <constraint firstItem="eCT-yr-WZC" firstAttribute="leading" secondItem="gPO-H0-JHD" secondAttribute="leading" constant="20" id="bdx-aD-rVi"/>
+                            <constraint firstItem="225-1B-hhs" firstAttribute="top" secondItem="eCT-yr-WZC" secondAttribute="bottom" constant="16" id="bxk-kU-HaF"/>
+                            <constraint firstItem="Nh5-c8-jHg" firstAttribute="leading" secondItem="gPO-H0-JHD" secondAttribute="leading" constant="16" id="h5C-Kg-ll0"/>
+                            <constraint firstItem="eCT-yr-WZC" firstAttribute="top" secondItem="V5L-Gp-pZb" secondAttribute="bottom" constant="20" id="iIM-rB-gbp"/>
+                            <constraint firstItem="gPO-H0-JHD" firstAttribute="trailing" secondItem="eCT-yr-WZC" secondAttribute="trailing" constant="20" id="lho-Np-fZX"/>
+                            <constraint firstItem="V5L-Gp-pZb" firstAttribute="centerX" secondItem="NA2-vL-sci" secondAttribute="centerX" id="oeu-Z3-Laq"/>
+                            <constraint firstItem="gPO-H0-JHD" firstAttribute="trailing" secondItem="225-1B-hhs" secondAttribute="trailing" constant="20" id="pdW-6r-f5D"/>
+                            <constraint firstItem="225-1B-hhs" firstAttribute="leading" secondItem="gPO-H0-JHD" secondAttribute="leading" constant="20" id="vt7-GM-jMS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="U4D-Ip-0kn"/>
+                    <connections>
+                        <outlet property="fruitimageView" destination="V5L-Gp-pZb" id="cVx-52-uZd"/>
+                        <outlet property="mainTitleLabel" destination="eCT-yr-WZC" id="uyn-Hc-97Q"/>
+                        <outlet property="subtitleLabel" destination="225-1B-hhs" id="MYo-cb-qqZ"/>
+                        <outlet property="titleLabel" destination="TN2-Jc-04O" id="Feo-zj-V4R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RWt-ye-fGe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="70"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sV5-sR-MBf"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="apple" width="1300" height="991"/>
+        <image name="banana" width="2560" height="2327"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="mango" width="800" height="800"/>
+        <image name="orange" width="360" height="270"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
